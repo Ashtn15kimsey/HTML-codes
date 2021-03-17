@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
 	  <link rel="stylesheet" type="text/css" href="css/one_page_website.css">
-	  <script src="JS/one_page_website.js"></script>
+	 
     <meta charset="UTF-8">
 	<title>The Exotic Car Rental</title>
   </head>
@@ -34,8 +34,9 @@
 		  <!--photo-container 1-->
 		 <div>
 			<div>
-				<img src="images/exotic car_1.jpg" alt="exotic car_1"width="1000" height="500" >
+				<img src="images/exotic car_1.jpg" alt="exotic car_1"width="1000" height="500" onclick="openModal();currentSlide(1)" class="hover-shadow">" >
 				<div>
+					o
 					<h3>Come drive however fast you'd like</h3>
 					<p>We have any exotic car you can imagine</p>
 				</div>
@@ -78,6 +79,58 @@
 			</div>
 		 </div>
    <!--End of Photo-containe 4-->
+
+   <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 4</div>
+		<img src="images/exotic car_1.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 4</div>
+		<img src="images/exotic car_2.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 4</div>
+		<img src="images/exotic car_3.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 4</div>
+		<img src="images/exotic car_4.jpg" style="width:100%">
+	  </div>
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="images/exotic car_1.jpg" onclick="currentSlide(1)" alt="Lambroghini">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="images/exotic car_2.jpg" onclick="currentSlide(2)" alt="Bentley">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="images/exotic car_3.jpg" onclick="currentSlide(3)" alt="Lambroghini">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="images/exotic car_4.jpg" onclick="currentSlide(4)" alt="Acura">
+	  </div>
+	</div>
+  </div>
    
      
      
@@ -119,6 +172,7 @@
 	   <!--footer-->
 	   <div>
 	   www.Theexoticcarsrental.com &nbsp; &copy;2021</div>
+	   <script src="JS/one_page_website.js"></script>
 	   <!--End footer-->
 	 </body>
 	 </html>
