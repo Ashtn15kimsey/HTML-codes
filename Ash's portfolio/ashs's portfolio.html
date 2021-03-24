@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width initial-scale=1.0">
         <title>Ash Kimsey</title>
         <link rel="stylesheet" type="text/css" href="portfolio.css">
+        <script src="portfolio.js"></script>
     </head>
 
     <!--Body-->
@@ -16,9 +17,12 @@
             <a class="active" href="#Home">Home</a>
             <a href="#About">About</a>
 
+            <a href="mySlide">My slideshow</a>
+
             <a href="#GitHub">GitHub</a>
 
             <a href="#Contact">Contact</a>
+
         </div>
 
         <!--Breaks inserted to add space between navbar and the first heading-->
@@ -51,6 +55,58 @@
                 </p>
             </strong>
         </div>
+         <!-- Slideshow section added -->
+         <div id="Slideshow">
+            <div id="Slideshow_Background"> 
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/ashpic.jpeg" alt="Picture of yourself">
+                        <div class="text">I'm available to assist you on your project in any way I can!</div>
+                    </div>
+                    <!-- Slide 2 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/html5_css_javascript.png" alt="HTML, CSS, and JS logos"> 
+                        <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/maxresdefault.jpg" alt="Python logo">
+                        <div class="text">the popular programming language Python,</div>
+                    </div>
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/th.jpg" alt="C# logo">
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+                    </div>
+                    <!-- Slide 5 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Sql.png.crdownload" alt="SQL logo"> 
+                        <div class="text">back end development, databases and SQL.</div>
+                    </div>
+                    <!-- Slide 6 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/algorithm.jpg" alt="Replace with a picture of your choosing"> 
+                        <div class="text"><a class="white-text" onclick="openForm()" href="#Contact">Contact me now!</a></div> 
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                </div>
+            </div>
+        </div>
+
 
         <!--About section-->
         <div class="Row" id="About">
@@ -80,7 +136,7 @@
                 <p>
                     You can view my coding projects on my GitHub profile here:
                     <br>
-                    <p class="center"><a href="https://github.com/the-tech-academy" target="_blank">The Tech Academy Github</a></p>
+                    <p class="center"><a href="https://github.com/Ashtn15kimsey" target="_blank">The Tech Academy Github</a></p>
                 </p>
             </div>
             <!--Right column-->
